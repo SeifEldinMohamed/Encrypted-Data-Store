@@ -1,9 +1,7 @@
 package com.plcoding.androidcrypto
 
-import android.os.Build
 import android.security.keystore.KeyGenParameterSpec
 import android.security.keystore.KeyProperties
-import androidx.annotation.RequiresApi
 import java.io.InputStream
 import java.io.OutputStream
 import java.security.KeyStore
@@ -12,7 +10,6 @@ import javax.crypto.KeyGenerator
 import javax.crypto.SecretKey
 import javax.crypto.spec.IvParameterSpec
 
-@RequiresApi(Build.VERSION_CODES.M)
 class CryptoManager {
     private val keyStore = KeyStore.getInstance("AndroidKeyStore").apply {
         load(null)

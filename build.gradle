@@ -3,7 +3,7 @@ buildscript {
         compose_version = '1.2.0'
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-serialization:1.7.0"
+        classpath "org.jetbrains.kotlin:kotlin-serialization:1.7.10" // to save something in datastore
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
